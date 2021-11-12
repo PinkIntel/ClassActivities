@@ -29,5 +29,5 @@
 2 == 2; // turns out true
 
 3 != "three"; //false
-"3" != 3; //false
+"3" != 3; 
 3 != 3;
