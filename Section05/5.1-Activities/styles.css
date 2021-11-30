@@ -1,0 +1,49 @@
+/* this adds a border around the flex items */
+.flex > * {
+    border: 1px solid;
+  }
+  
+  .flex {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-between;
+  }
+  
+
+  form {
+      margin: 2em;
+      /* position: fixed;
+      top: 5px; */
+  }
+
+
+  @media print {
+
+    /* #boxes {
+        border: none;
+    } */
+    .flex > * {
+      border: none;
+    }
+
+    /* header, form {
+        display: none;
+    } */
+
+  }
+  
+  @media (hover: hover) {
+    * {
+      color: palevioletred;
+    }
+  }
+  
+  @media (max-width: 700px) {
+      /* .flex {
+          flex-direction: column;
+      } */
+    * {
+      color: purple;
+      flex-direction: column;
+    }
+  }
