@@ -1,0 +1,84 @@
+html {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* this adds a border around the flex items */
+.flex > * {
+    /* border: 1px solid; */
+  }
+  
+  .flex {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-between;
+  }
+  
+
+  form {
+      margin: 2em;
+      /* position: fixed;
+      top: 5px; */
+  }
+
+
+  @media print {
+
+    /* #boxes {
+        border: none;
+    } */
+    .flex > * {
+      border: none;
+    }
+
+    /* header, form {
+        display: none;
+    } */
+
+  }
+  
+  @media (hover: hover) {
+    * {
+      color: palevioletred;
+    }
+  }
+  
+  @media (max-width: 700px) {
+      /* .flex {
+          flex-direction: column;
+      } */
+    * {
+      color: purple;
+      flex-direction: column;
+    }
+  }
+
+
+  @media (min-width: 550px) {
+    nav > .fa-bars { /*it only needs the .fa-bars when you're trying to reference the class in CSS*/
+      display: none;
+    }
+  }
+
+  /* in HTML: <ul class="hidden--mobile"> */
+@media (max-width: 550px) {
+  .hidden--mobile {
+    display: none;
+  }
+}
+
+header {
+  background-image: url(https://source.unsplash.com/random/800x600);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header > a {
+  text-decoration: none;
+  background-color: white;
+  font-size: 1.5em;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
